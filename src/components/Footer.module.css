@@ -1,6 +1,4 @@
-.col {
-  width: 20%;
-}
+
 
 .bgImg {
   background-image: url("../assets/img/footer-bg.jpg");
@@ -14,4 +12,18 @@ a {
   text-transform: capitalize;
   color: grey;
   font-size: small;
+}
+
+.blueBtn {
+  color: white;
+  text-transform: uppercase;
+  background-color: rgb(74, 72, 72);
+  border: 2px solid rgb(8, 126, 224);
+  border-radius: 0px;
+  height: 40px;
+  width: 120px;
+}
+
+.follow{
+  color: rgb(15, 118, 229);
 }

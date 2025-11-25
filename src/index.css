@@ -37,9 +37,15 @@ a {
 .justify-content-center {
   justify-content: center;
 }
+
 .justify-content-between {
   justify-content:space-between;
 }
+
+.justify-content-start {
+  justify-content:start;
+}
+
 
 .align-items-center {
   align-items: center;
@@ -67,4 +73,8 @@ a {
   padding-left: 40px;
   padding-right: 40px;;
 
+}
+
+.mb-20{
+  margin-bottom: 20px;
 }

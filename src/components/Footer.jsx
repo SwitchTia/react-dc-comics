@@ -6,9 +6,9 @@ export default function Footer() {
         <footer  >
             <div className="container">
                 <div className={`footer-up py-40 px-40 ${style.bgImg}`}>
-                    <div className="d-flex">
+                    <div className="d-flex justify-content-start px-40">
                         <div>
-                            <div className={style.col}>
+                            <div className="mb-20">
                                 <h3>DC Comics</h3>
                                 <ul>
                                     <li>
@@ -46,7 +46,8 @@ export default function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div className={style.col}>
+
+                        <div>
                             <h3>DC</h3>
                             <ul>
                                 <li>
@@ -84,7 +85,8 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div>
-                        <div className={style.col}>
+
+                        <div>
                             <h3>Sites</h3>
                             <ul>
                                 <li>
@@ -108,12 +110,12 @@ export default function Footer() {
                 </div>
                 <div className={`footer-down ${style.bgGrey}`}>
                     <div className="px-40 py-40 d-flex justify-content-between">
-                        <div className="btn">
-                            <button>Sign-up now!</button>
+                        <div >
+                            <button className={`${style.blueBtn}`}>Sign-up now!</button>
                         </div>
                         
                         <ul>
-                            <li className="Follow">Follow us</li>
+                            <li className={`${style.follow}`}>Follow us</li>
                         </ul>
                     </div>
                 </div>
