@@ -1,11 +1,12 @@
-import Logo from "../assets/img/dc-logo.png";
+import Logo from "./Logo";
+import style from "./Header.module.css";
 
 export default function Header() {
   return (
-    <header className="text-center">
+    <header className="d-flex justify-content-between align-items-center">
       <Logo />
       <nav className={style.nav}>
-        <ul className="d-flex justify-content-center g-20">
+        <ul className="d-flex justify-content-center text-center g-20">
           <li>
             <a href="">Characters</a>
           </li>
