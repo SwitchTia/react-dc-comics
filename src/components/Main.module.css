@@ -1,4 +1,8 @@
-.background {
+.bgBlack {
   background-color: rgb(42, 41, 41);
+}
+
+.bgBlue{
+  background-color: rgb(21, 122, 237);
 }
 

@@ -56,9 +56,10 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="footer-down">
-                    <button>Sign-up now!</button>
-
+                <div className="footer-down d-flex">
+                    <div className="px-40 py-40">
+                        <button>Sign-up now!</button>
+                    </div>
                 </div>
             </div>
         </footer >
