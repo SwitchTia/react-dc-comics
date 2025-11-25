@@ -7,8 +7,8 @@ export default function Main() {
         <h1>Content goes here</h1>
       </div>
       
-      <div className={`py-40 text-center ${style.bgBlue}`}>
-        <ul>
+      <div className={`sectionBlue py-40 text-center ${style.bgBlue}`}>
+        <ul className="d-flex justify-content-center text-center g-20">
           <li>
             <img src="" alt="" />
             <h5>Digital comics</h5>

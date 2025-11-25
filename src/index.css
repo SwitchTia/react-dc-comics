@@ -20,7 +20,6 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .container {
@@ -29,6 +28,10 @@ a {
 
 .d-flex {
   display: flex;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .justify-content-center {
