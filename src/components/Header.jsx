@@ -3,14 +3,14 @@ import style from "./Header.module.css";
 
 export default function Header() {
   return (
-    <header className="d-flex justify-content-between align-items-center">
+    <header className="py-20 d-flex justify-content-between align-items-center">
       <Logo />
       <nav className={style.nav}>
         <ul className="d-flex justify-content-center text-center g-20">
           <li>
             <a href="">Characters</a>
           </li>
-          <li className={style.active}>
+          <li >
             <a href="">Comics</a>
           </li>
           <li>
@@ -19,7 +19,7 @@ export default function Header() {
           <li>
             <a href="">TV</a>
           </li>
-          <li>
+          <li className={style.active}>
             <a href="">Games</a>
           </li>
           <li>

@@ -14,3 +14,18 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+nome repo: react-dc-comics
+
+Descrizione:
+Create un nuovo progetto React e definite i componenti necessari per strutturare il layout come da screenshot allegato.
+Per oggi diamo priorità alla struttura: quando è tutto bello solido, passiamo al CSS!
+
+Note:
+Il font utilizzato è Open Sans
+
+Bonus: 
+Creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
+Utilizzare module CSS
