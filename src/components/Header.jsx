@@ -4,7 +4,7 @@ import style from "./Header.module.css";
 export default function Header() {
   return (
     <header className="py-20 d-flex justify-content-between align-items-center">
-      <Logo />
+      <Logo/>
       <nav className={style.nav}>
         <ul className="d-flex justify-content-center text-center g-20">
           <li>
