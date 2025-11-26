@@ -34,6 +34,10 @@ a {
   display: flex;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -87,9 +91,19 @@ a {
   height: 60px;
 }
 
+.col {
+  width: calc(100% / 6);
+
+  min-height: 100px;
+  padding: 10px;
+}
+
+
 .footer-up{
   background-image: url(./assets/img/dc-logo-bg.png), url(./assets/img/footer-bg.jpg);
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: right;
 }
+
+
