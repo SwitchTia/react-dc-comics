@@ -54,8 +54,6 @@ const links = [
       path: "/shop",
       active: false,
     },
-    
-    
   ];
 
   return (
@@ -68,7 +66,7 @@ const links = [
                <a href={currentLink.path}>{currentLink.title}</a>
               </li>
 
-          ))}
+          ))};
 
         </ul>
       </nav>

@@ -1,7 +1,11 @@
 import style from "./Footer.module.css";
+import { linksDCComics } from "../assets/footerLists.js/dcComicsLinks.js";
+import { linksDC } from "../assets/footerLists.js/dcLinks.js";
 
 
 export default function Footer() {
+
+
     return (
         <footer  >
             <div className="container">
@@ -11,27 +15,12 @@ export default function Footer() {
                             <div className="mb-20">
                                 <h3>DC Comics</h3>
                                 <ul>
-                                    <li>
-                                        <a href="">Characters</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Comisc</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Movies</a>
-                                    </li>
-                                    <li>
-                                        <a href="">TV</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Games</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Videos</a>
-                                    </li>
-                                    <li>
-                                        <a href="">News</a>
-                                    </li>
+                                    {linksDCComics.map((currentLink, index) => (
+                                        <li key={index}>
+                                            <a href={currentLink.path}>{currentLink.title}</a>
+                                        </li>
+
+                                    ))}
                                 </ul>
                             </div>
                             <div >
@@ -50,39 +39,11 @@ export default function Footer() {
                         <div>
                             <h3>DC</h3>
                             <ul>
-                                <li>
-                                    <a href="">Terms of use</a>
-                                </li>
-                                <li>
-                                    <a href="">Privacy policy</a>
-                                </li>
-                                <li>
-                                    <a href="">Ad Choices</a>
-                                </li>
-                                <li>
-                                    <a href="">Advertising</a>
-                                </li>
-                                <li>
-                                    <a href="">Jobs</a>
-                                </li>
-                                <li>
-                                    <a href="Subscriptions"></a>
-                                </li>
-                                <li>
-                                    <a href="Talent Workshops"></a>
-                                </li>
-                                <li>
-                                    <a href="">CPSC Certifications</a>
-                                </li>
-                                <li>
-                                    <a href="">Ratings</a>
-                                </li>
-                                <li>
-                                    <a href="">Shop Help</a>
-                                </li>
-                                <li>
-                                    <a href="">Contact us</a>
-                                </li>
+                                {linksDC.map((currentLink, index) => (
+                                    <li key={index}>
+                                        <a href={currentLink.path}>{currentLink.title}</a>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
 
@@ -113,7 +74,7 @@ export default function Footer() {
                         <div >
                             <button className={`${style.blueBtn}`}>Sign-up now!</button>
                         </div>
-                        
+
                         <ul>
                             <li className={`${style.follow}`}>Follow us</li>
                         </ul>
