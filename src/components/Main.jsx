@@ -4,6 +4,10 @@ import style from "./Main.module.css";
 export default function Main() {
   return (
     <main>
+      <div className={`img-section py-40 text-center ${style.bgImg}`}>
+       
+      </div>
+
       <div className={`py-40 text-center ${style.bgBlack}`}>
         <h1>Content goes here</h1>
       </div>
@@ -17,7 +21,7 @@ export default function Main() {
               <a href={currentLink.path}>{currentLink.title}</a>
             </li>
 
-          ))};
+          ))}
         </ul>
       </div>
     </main>

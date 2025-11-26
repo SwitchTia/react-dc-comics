@@ -29,4 +29,4 @@ const blueBgLinks = [
      
 ]
 
-export { blueBgLinks }
+export { blueBgLinks };

@@ -6,5 +6,10 @@
   background-color: rgb(21, 122, 237);
 }
 
+.bgImg {
+  background-image: url(../assets/img/jumbotron.jpg);
+  background-size: cover;
+  height: 150px;
+}
 
 
