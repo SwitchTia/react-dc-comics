@@ -86,3 +86,10 @@ a {
 .logo{
   height: 60px;
 }
+
+.footer-up{
+  background-image: url(./assets/img/dc-logo-bg.png), url(./assets/img/footer-bg.jpg);
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}

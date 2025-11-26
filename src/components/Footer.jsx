@@ -1,7 +1,7 @@
 import style from "./Footer.module.css";
-import { dcComicsLinks } from "../assets/footerLists.js/dcComicsLinks.js";
-import { dcLinks } from "../assets/footerLists.js/dcLinks.js";
-import { sitesLinks } from "../assets/footerLists.js/sitesLinks.js";
+import { dcComicsLinks } from "../assets/arraysLists/footerLists.js/dcComicsLinks.js";
+import { dcLinks } from "../assets/arraysLists/footerLists.js/dcLinks.js";
+import { sitesLinks } from "../assets/arraysLists/footerLists.js/sitesLinks.js";
 
 
 export default function Footer() {
@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <footer  >
             <div className="container">
-                <div className={`footer-up py-40 px-40 ${style.bgImg}`}>
+                <div className="footer-up py-40 px-40">
                     <div className="d-flex justify-content-start px-40">
                         <div>
                             <div className="mb-20">
