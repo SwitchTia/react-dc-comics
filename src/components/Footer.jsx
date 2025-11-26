@@ -1,6 +1,7 @@
 import style from "./Footer.module.css";
-import { linksDCComics } from "../assets/footerLists.js/dcComicsLinks.js";
-import { linksDC } from "../assets/footerLists.js/dcLinks.js";
+import { dcComicsLinks } from "../assets/footerLists.js/dcComicsLinks.js";
+import { dcLinks } from "../assets/footerLists.js/dcLinks.js";
+import { sitesLinks } from "../assets/footerLists.js/sitesLinks.js";
 
 
 export default function Footer() {
@@ -15,12 +16,14 @@ export default function Footer() {
                             <div className="mb-20">
                                 <h3>DC Comics</h3>
                                 <ul>
-                                    {linksDCComics.map((currentLink, index) => (
+
+                                    {dcComicsLinks.map((currentLink, index) => (
                                         <li key={index}>
                                             <a href={currentLink.path}>{currentLink.title}</a>
                                         </li>
 
                                     ))}
+
                                 </ul>
                             </div>
                             <div >
@@ -39,32 +42,26 @@ export default function Footer() {
                         <div>
                             <h3>DC</h3>
                             <ul>
-                                {linksDC.map((currentLink, index) => (
+
+                                {dcLinks.map((currentLink, index) => (
                                     <li key={index}>
                                         <a href={currentLink.path}>{currentLink.title}</a>
                                     </li>
                                 ))}
+
                             </ul>
                         </div>
 
                         <div>
                             <h3>Sites</h3>
                             <ul>
-                                <li>
-                                    <a href="">DC</a>
-                                </li>
-                                <li>
-                                    <a href="">MAD MAgazine</a>
-                                </li>
-                                <li>
-                                    <a href="">DC Kids</a>
-                                </li>
-                                <li>
-                                    <a href="">DC Universe</a>
-                                </li>
-                                <li>
-                                    <a href="">DC Power Visa</a>
-                                </li>
+
+                                {sitesLinks.map((currentLink, index) => (
+                                    <li key={index}>
+                                        <a href={currentLink.path}>{currentLink.title}</a>
+                                    </li>
+                                ))}
+
                             </ul>
                         </div>
                     </div>

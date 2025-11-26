@@ -1,4 +1,4 @@
-const linksDCComics = [
+const dcComicsLinks = [
         {
             title: "Characters",
             path: "/characters",
@@ -46,4 +46,4 @@ const linksDCComics = [
         }
     ];
 
-    export { linksDCComics }
+    export { dcComicsLinks }

@@ -1,4 +1,4 @@
-const linksDC = [
+const dcLinks = [
         {
             title: "Terms of use",
             path: "/terms",
@@ -56,5 +56,5 @@ const linksDC = [
         }
     ];
 
-    export { linksDC }
+export { dcLinks }
 
