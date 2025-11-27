@@ -118,3 +118,23 @@ header .active {
   height: 60px;
   padding: 10px;
 }
+
+.alert {
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+.alert-warning {
+  border-color: yellow;
+  background-color: rgb(196, 196, 119);
+}
+
+.alert-success {
+  border-color: green;
+  background-color: rgba(128, 216, 172, 0.5);
+}
+
+.alert-error {
+  border-color: red;
+  background-color: rgba(212, 174, 172, 0.5);
+}

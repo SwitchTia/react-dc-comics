@@ -1,47 +1,31 @@
-import comicsList from "../assets/arraysLists/mainLists/comics";
+import  comicsList  from "../assets/arraysLists/mainLists/comics";
 import ProductCard from "./ProductCard";
+import style from "./Main.module.css";
+
 
 export default function ProductsList() {
     return (
-        <div className={`comics d-flex wrap ${style.bgBlack}`}>
+        <section>
+            <div className={`d-flex wrap ${style.bgBlack}`}>
 
-            {comicsList.map((currentComics) => {
+                {comicsList.map((currentComics) => {
 
+                    <ProductCard
+                        key={currentComics.id}
+                        thumb={currentComics.thumb}
+                        title={currentComics.title}
+                        price={currentComics.price}
+                    />
 
-                <ProductCard
-                    key={currentComics.id}
-                    image={currentComics.thumb}
-                    title={currentComics.title}
-                    price={currentComics.type}
-                />
+                })}
 
-            })}
-
-            <div className="d-flex justify-content-center align-items-center text-center" >
-                <button className={`${style.loadBtn}`}>Load more</button>
+                <div className="d-flex justify-content-center align-items-center text-center" >
+                    <button className={`${style.loadBtn}`}>Load more</button>
+                </div>
             </div>
-        </div>
+        </section>
     );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 {/* <div className="d-flex wrap">
         {products.map((product) => (

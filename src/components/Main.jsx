@@ -3,17 +3,24 @@ import comicsList from "../assets/arraysLists/mainLists/comics";
 import style from "./Main.module.css";
 import ProductCard from "./ProductCard";
 import ProductsList from "./ProductsList";
+import Alert from "./Alert";
 
 
 export default function Main() {
+  const mainClasses = `py-40 text-center ${style.bgImg}`;
+
   return (
     <main>
 
-      <div className={`img-section py-40 text-center ${style.bgImg}`}></div>
+      <div className={mainClasses}></div>
 
+      <div className="container">
+        {comicsList.length !== 0 ? <ProductsList /> : <Alert type="error">
+        <h2>ERRORE</h2>
+      </Alert>}
+      </div>
 
-
-      <div className={`comics d-flex wrap ${style.bgBlack}`}>
+      {/* <div className={`comics d-flex wrap ${style.bgBlack}`}>
 
         {comicsList.map((currentComics) => {
 
@@ -30,7 +37,7 @@ export default function Main() {
         <div className="d-flex justify-content-center align-items-center text-center" >
           <button className={`${style.loadBtn}`}>Load more</button>
         </div>
-      </div>
+      </div> */}
 
 
 
@@ -47,7 +54,7 @@ export default function Main() {
           ))}
         </div>
       </div>
-      
+
     </main>
   );
 }
