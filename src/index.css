@@ -59,9 +59,6 @@ a {
   align-items: center;
 }
 
-.align-content-end{
-  align-items: flex-end;
-}
 .text-center {
   text-align: center;
 }
@@ -115,4 +112,9 @@ a {
 header .active {
   text-decoration: underline;
   background-color: rgb(94, 176, 234)
+}
+
+.buy-img {
+  height: 60px;
+  padding: 10px;
 }

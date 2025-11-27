@@ -38,10 +38,10 @@ export default function Main() {
         <div className="d-flex justify-content-center g-20">
 
           {blueBgLinks.map((currentLink, index) => (
-            <div key={index} className="d-flex justify-content-center align-items-end">
-              <img src={currentLink.src} alt={currentLink.title} />
+            <div key={index} className="d-flex justify-content-center align-items-center">
+              <img className="buy-img" src={currentLink.src} alt={currentLink.title} />
               {/* <a href={currentLink.path}>{currentLink.title}</a> */}
-              <h4 className="upperCase">{currentLink.title}</h4>
+              <h4 className="upperCase ">{currentLink.title}</h4>
             </div>
 
           ))}
