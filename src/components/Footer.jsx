@@ -5,6 +5,7 @@ import Facebook from "./FollowLinks.jsx";
 import { dcComicsLinks } from "../assets/arraysLists/footerLists/dcComicsLinks.js";
 import { dcLinks } from "../assets/arraysLists/footerLists/dcLinks.js";
 import { sitesLinks } from "../assets/arraysLists/footerLists/sitesLinks.js";
+import Socials from "./FollowLinks.jsx";
 
 
 export default function Footer() {
@@ -75,9 +76,9 @@ export default function Footer() {
                             <button className={`${style.blueBtn}`}>Sign-up now!</button>
                         </div>
 
-                        <div>
+                        <div className="d-flex ">
                             <h3 className={`${style.follow}`}>Follow us</h3>
-                            <Facebook/>
+                            <Socials/>
                          
                         </div>
                     </div>

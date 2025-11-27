@@ -138,3 +138,7 @@ header .active {
   border-color: red;
   background-color: rgba(212, 174, 172, 0.5);
 }
+
+.socials {
+  padding-right: 20px;
+}
