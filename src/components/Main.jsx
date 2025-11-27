@@ -29,18 +29,22 @@ export default function Main() {
         </div>
       </div>
 
+
+
       <div className={`sectionBlue py-40 text-center ${style.bgBlue}`}>
         <div className="d-flex justify-content-center text-center g-20">
 
           {blueBgLinks.map((currentLink, index) => (
-            <div key={index}>
+            <div key={index} className="d-flex justify-content-center align-items-end">
               <img src={currentLink.src} alt={currentLink.title} />
-              <a href={currentLink.path}>{currentLink.title}</a>
+              {/* <a href={currentLink.path}>{currentLink.title}</a> */}
+              <h4 className="capitalize">{currentLink.title}</h4>
             </div>
 
           ))}
         </div>
       </div>
+      
     </main>
   );
 }
