@@ -1,6 +1,7 @@
 import { blueBgLinks } from "../assets/arraysLists/mainLists/blueBgLinks";
 import comicsList from "../assets/arraysLists/mainLists/comics";
 import style from "./Main.module.css";
+import ProductCard from "./ProductCard";
 
 export default function Main() {
   return (
@@ -15,11 +16,11 @@ export default function Main() {
         {comicsList.map((currentComics) => {
 
           return (
-            <div className={`col ${currentComics.type}`} key={currentComics.id}>
+            <div className={`col  ${currentComics.type}`} key={currentComics.id}>
 
               <img src={currentComics.thumb} alt={currentComics.title} />
               <h5 className="upperCase">{currentComics.title}</h5>
-              <p>Price: {currentComics.price}</p>
+              <p >Price: {currentComics.price}</p>
             </div>
           )
         })}
