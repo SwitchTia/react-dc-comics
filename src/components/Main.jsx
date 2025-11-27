@@ -1,5 +1,5 @@
-import { blueBgLinks } from "../assets/arraysLists/mainLists.js/blueBgLinks";
-import comicsList from "../assets/arraysLists/mainLists.js/comics";
+import { blueBgLinks } from "../assets/arraysLists/mainLists/blueBgLinks";
+import comicsList from "../assets/arraysLists/mainLists/comics";
 import style from "./Main.module.css";
 
 export default function Main() {
@@ -18,7 +18,7 @@ export default function Main() {
             <div className={`col ${currentComics.type}`} key={currentComics.id}>
 
               <img src={currentComics.thumb} alt={currentComics.title} />
-              <h5 className="capitalize">{currentComics.title}</h5>
+              <h5 className="upperCase">{currentComics.title}</h5>
               <p>Price: {currentComics.price}</p>
             </div>
           )
@@ -32,13 +32,13 @@ export default function Main() {
 
 
       <div className={`sectionBlue py-40 text-center ${style.bgBlue}`}>
-        <div className="d-flex justify-content-center text-center g-20">
+        <div className="d-flex justify-content-center g-20">
 
           {blueBgLinks.map((currentLink, index) => (
             <div key={index} className="d-flex justify-content-center align-items-end">
               <img src={currentLink.src} alt={currentLink.title} />
               {/* <a href={currentLink.path}>{currentLink.title}</a> */}
-              <h4 className="capitalize">{currentLink.title}</h4>
+              <h4 className="upperCase">{currentLink.title}</h4>
             </div>
 
           ))}

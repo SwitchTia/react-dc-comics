@@ -98,11 +98,6 @@ a {
   padding: 10px;
 }
 
-.capitalize{
-  text-transform: capitalize;
-}
-
-
 .footer-up{
   background-image: url(./assets/img/dc-logo-bg.png), url(./assets/img/footer-bg.jpg);
   background-size: contain, cover;
@@ -110,11 +105,11 @@ a {
   background-position: right;
 }
 
-.capitalize{
+.upperCase{
   text-transform: uppercase;
 }
 
-hearder .active {
+header .active {
   text-decoration: underline;
-  color: rgb(8, 136, 228)
+  background-color: rgb(94, 176, 234)
 }
