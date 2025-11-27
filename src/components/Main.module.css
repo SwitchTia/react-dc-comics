@@ -12,4 +12,13 @@
   height: 150px;
 }
 
+.loadBtn {
+  background-color: rgb(32, 123, 243);
+  border:rgb(32, 123, 243);
+  text-transform: uppercase;
+  color: white;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
 

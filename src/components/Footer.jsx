@@ -1,4 +1,7 @@
 import style from "./Footer.module.css";
+import Facebook from "./FollowLinks.jsx";
+
+
 import { dcComicsLinks } from "../assets/arraysLists/footerLists.js/dcComicsLinks.js";
 import { dcLinks } from "../assets/arraysLists/footerLists.js/dcLinks.js";
 import { sitesLinks } from "../assets/arraysLists/footerLists.js/sitesLinks.js";
@@ -14,7 +17,7 @@ export default function Footer() {
                     <div className="d-flex justify-content-start px-40">
                         <div>
                             <div className="mb-20">
-                                <h3>DC Comics</h3>
+                                <h3 className="capitalize">DC Comics</h3>
                                 <ul>
 
                                     {dcComicsLinks.map((currentLink, index) => (
@@ -27,7 +30,7 @@ export default function Footer() {
                                 </ul>
                             </div>
                             <div >
-                                <h3>Shop</h3>
+                                <h3 className="capitalize">Shop</h3>
                                 <ul>
                                     <li>
                                         <a href="">Shop DC</a>
@@ -53,7 +56,7 @@ export default function Footer() {
                         </div>
 
                         <div>
-                            <h3>Sites</h3>
+                            <h3 className="capitalize">Sites</h3>
                             <ul>
 
                                 {sitesLinks.map((currentLink, index) => (
@@ -72,9 +75,11 @@ export default function Footer() {
                             <button className={`${style.blueBtn}`}>Sign-up now!</button>
                         </div>
 
-                        <ul>
-                            <li className={`${style.follow}`}>Follow us</li>
-                        </ul>
+                        <div>
+                            <h3 className={`${style.follow}`}>Follow us</h3>
+                            <Facebook/>
+                         
+                        </div>
                     </div>
                 </div>
             </div>

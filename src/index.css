@@ -98,6 +98,10 @@ a {
   padding: 10px;
 }
 
+.capitalize{
+  text-transform: capitalize;
+}
+
 
 .footer-up{
   background-image: url(./assets/img/dc-logo-bg.png), url(./assets/img/footer-bg.jpg);
@@ -106,4 +110,12 @@ a {
   background-position: right;
 }
 
+.capitalize{
+  text-transform: uppercase;
+}
+
+hearder .active {
+  text-decoration: underline;
+  color: rgb(8, 136, 228);
+}
 

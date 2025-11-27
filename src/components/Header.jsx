@@ -63,7 +63,7 @@ const links = [
         <ul className="d-flex justify-content-center text-center g-20">
           {links.map((currentLink, index) => (
               <li key={index}>
-               <a href={currentLink.path}>{currentLink.title}</a>
+               <a className={links.active ? "active" : ""} href={currentLink.path}>{currentLink.title}</a>
               </li>
 
           ))};

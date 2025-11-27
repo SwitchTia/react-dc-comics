@@ -2,13 +2,13 @@ const blueBgLinks = [
         {
             title: "Digital comics",
             path: "/digital comics",
-            img: "./assets/img/buy-comics-digital-comics.png",
+            src: "./assets/img/buy-comics-digital-comics.png",
             active: false,
         },
         {
             title: "MAD Magazine",
             path: "/mad",
-            img: "./assets/img/buy-comics-merchandise.png",
+            src: "./assets/img/buy-comics-merchandise.png",
             active: true,
         },
         {

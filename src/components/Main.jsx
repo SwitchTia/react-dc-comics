@@ -13,29 +13,33 @@ export default function Main() {
       <div className={`comics d-flex wrap ${style.bgBlack}`}>
 
         {comicsList.map((currentComics) => {
-            
-            return (
-              <div className={`col ${currentComics.type}`} key={currentComics.id}>
 
-                <img src={currentComics.thumb} alt={currentComics.title} />
-                <h5>{currentComics.title}</h5>
-                <p>Price: {currentComics.price}</p>
-              </div>
-            );
-          })}
+          return (
+            <div className={`col ${currentComics.type}`} key={currentComics.id}>
+
+              <img src={currentComics.thumb} alt={currentComics.title} />
+              <h5 className="capitalize">{currentComics.title}</h5>
+              <p>Price: {currentComics.price}</p>
+            </div>
+          )
+        })}
+
+        <div className="d-flex justify-content-center align-items-center text-center" >
+          <button className={`${style.loadBtn}`}>Load more</button>
+        </div>
       </div>
 
       <div className={`sectionBlue py-40 text-center ${style.bgBlue}`}>
-        <ul className="d-flex justify-content-center text-center g-20">
+        <div className="d-flex justify-content-center text-center g-20">
 
           {blueBgLinks.map((currentLink, index) => (
-            <li key={index}>
-            
+            <div key={index}>
+              <img src={currentLink.src} alt={currentLink.title} />
               <a href={currentLink.path}>{currentLink.title}</a>
-            </li>
+            </div>
 
           ))}
-        </ul>
+        </div>
       </div>
     </main>
   );
