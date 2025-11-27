@@ -2,6 +2,8 @@ import { blueBgLinks } from "../assets/arraysLists/mainLists/blueBgLinks";
 import comicsList from "../assets/arraysLists/mainLists/comics";
 import style from "./Main.module.css";
 import ProductCard from "./ProductCard";
+import ProductsList from "./ProductsList";
+
 
 export default function Main() {
   return (
