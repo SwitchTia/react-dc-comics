@@ -8,15 +8,14 @@ export default function ProductsList() {
         <section>
             <div className={`d-flex wrap ${style.bgBlack}`}>
 
-                {comicsList.map((currentComics) => {
-
-                    <ProductCard
-                        key={currentComics.id}
-                        thumb={currentComics.thumb}
-                        title={currentComics.title}
-                        price={currentComics.price}
+                {comicsList.map(({id, thumb, title, price}) => {
+                    
+                    return <ProductCard
+                        key={id}
+                        thumb={thumb}
+                        title={title}
+                        price={price}
                     />
-
                 })}
 
                 <div className="d-flex justify-content-center align-items-center text-center" >
@@ -26,15 +25,3 @@ export default function ProductsList() {
         </section>
     );
 }
-
-{/* <div className="d-flex wrap">
-        {products.map((product) => (
-          <ProductCard
-            key={product.id}
-            image={product.src}
-            title={product.title}
-            type={product.type}
-            time={product.time}
-          />
-        ))}
-      </div> */}

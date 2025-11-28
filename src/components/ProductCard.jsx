@@ -1,8 +1,4 @@
-export default function ProductCard(props) {
-
-
-    const { thumb, title, price } = props;
-  
+export default function ProductCard({ thumb, title, price }) {
 
     return (
 
